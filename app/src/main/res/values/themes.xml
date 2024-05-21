@@ -1,0 +1,80 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+
+
+<!--    heeed le 3mlto ana aktar este3ml lal style-->
+
+
+
+<!-- Theme.AppCompat.Light.DarkActionBar this not the material design theme that was introduce to api level 21
+ not material design:
+(api level 7+)
+ *Theme.AppCompat(dark version of android material theme)
+ *Theme.AppCompat.Light(light version wich the application widow is light and the action bar,status bar light)
+ *Theme.AppCompat.Light.NoActionBar(light version wich the application widow is light but no action bar)
+ *Theme.AppCompat.DayNight(allow you to change betwwen day and night(light/dark))
+
+
+ -->
+
+
+
+<!--    material design for api leve 21+ :
+
+        material design in 2014 (api level 21+) derived from appcompat
+        *Theme.Material(dark version of android material theme)
+        *Theme.Material.Light(light version wich the application widow is light and the action bar,status bar light)
+        *Theme.Material.Light.NoActionBar(light version wich the application widow is light but no action bar)
+        *Theme.Material.DayNight(allow you to change betwwen day and night(light/dark))
+
+        latest material design in 2021
+        *Theme.Material3(dark version of android material theme)
+        *Theme.Material3.Light(light version wich the application widow is light and the action bar,status bar light)
+        *Theme.Material3.Light.NoActionBar(light version wich the application widow is light but no action bar)
+        *Theme.Material3.DayNight(allow you to change betwwen day and night(light/dark))
+
+        material design in 2017-20218
+        *Theme.MaterialComponents(dark version of android material theme)
+        *Theme.MaterialComponents.Light(light version wich the application widow is light and the action bar,status bar light)
+        *Theme.MaterialComponents.Light.NoActionBar(light version wich the application widow is light but no action bar)
+        *Theme.MaterialComponents.DayNight(allow you to change betwwen day and night(light/dark))
+-->
+    <style name="Base.Theme.MyApplication" parent="Theme.Material3.Light">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="materialButtonStyle">@style/mybutton2</item>
+        <item name="android:textViewStyle">@style/mytext1</item>
+    </style>
+
+
+    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
+
+
+    <style name="mybutton" parent="Widget.AppCompat.Button">
+        <item name="backgroundTint">#A61818</item>
+    </style>
+
+
+    <style name="mybutton1" parent="Widget.AppCompat.Button">
+        <item name="backgroundTint">#152DAE</item>
+    </style>
+
+
+    <style name="mybutton2" parent="Widget.Material3.Button">
+        <item name="backgroundTint">#05BBAA</item>
+    </style>
+
+    <style name="mytext" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">32sp</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textColor">#8E17A3</item>
+    </style>
+
+
+    <style name="mytext1" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">45sp</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textColor">#E41C0D</item>
+    </style>
+</resources>
